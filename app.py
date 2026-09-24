@@ -66,7 +66,7 @@ Die Schranken laufen aufeinander zu: der Master gibt eine untere, der beste bish
 st.caption(
     "Anders als die Fall-Demos im Portfolio, die an einem Anwendungsfall mehrere Verfahren vergleichen, zeigt diese Demo - elftes Stück der Netzwerkfluss-Linie der \"Konzepte\"-Reihe, zweites im Netzwerkdesign-Ast - **ein** Verfahren an einem wachsenden Beispiel. "
     "Das Vorgängerstück [fixkosten-netzdesign-demo](https://github.com/sebastian-hanisch/fixkosten-netzdesign-demo) misst, wie schwach die LP-Schranke ist und was Schnitte über den Entwurf y ändern; hier ist das Verfahren der Zerlegung dran. "
-    "Das Folgestück: **Slope Scaling** (Heuristik für große Netze)."
+    "Das Folgestück: **Slope Scaling** (gebaut: [slope-scaling-demo](https://github.com/sebastian-hanisch/slope-scaling-demo), Heuristik für große Netze)."
 )
 
 with st.expander("So funktioniert die Zerlegung", expanded=True):
@@ -348,7 +348,7 @@ st.markdown(
 | **Statisches Netz** | Fixkosten gelten je Kante und Tag; Fahrpläne brauchen ein Zeit-Raum-Netz (leercontainer-demo). |
 """
 )
-st.caption("Die Netzwerkfluss-Linie ist als Ganzes geplant: Edmonds-Karp, Dinic, Push-Relabel, Successive Shortest Paths, Cycle-Canceling, Cost Scaling, Mehrgüterfluss, Column Generation, Garg-Könemann, Fixkosten-Netzwerkdesign, Benders-Zerlegung (dieses Stück) und Slope Scaling.")
+st.caption("Die Netzwerkfluss-Linie ist als Ganzes geplant: Edmonds-Karp, Dinic, Push-Relabel, Successive Shortest Paths, Cycle-Canceling, Cost Scaling, Mehrgüterfluss, Column Generation, Garg-Könemann, Fixkosten-Netzwerkdesign, Benders-Zerlegung (dieses Stück) und Slope Scaling (gebaut).")
 
 st.markdown("---")
 

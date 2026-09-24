@@ -7,7 +7,7 @@ anders als die Fall-Demos im Portfolio (ein Anwendungsfall, mehrere Verfahren im
 Das Modell ist das des Vorgängers: Mehrgüterfluss mit einer Ja/Nein-Entscheidung $y$ je Kante (Fixkosten). Ist der Entwurf gewählt, ist der Rest ein LP. **Benders** trennt genau das: ein **Master** wählt den Entwurf (ganzzahlig, mit einer Variable $\theta$ für die Flusskosten), ein **Teilproblem** rechnet den Fluss dazu; aus den **Dualpreisen der Kapazitäten** entsteht ein **Optimalitätsschnitt** $\theta\ge v(\bar y)+\sum_g\lambda_g(y_g-\bar y_g)$, aus einer Fehlmenge ein **Zulässigkeitsschnitt**. Die Schranken laufen aufeinander zu: untere = Master-Wert, obere = bester Entwurf mit Fluss.
 Vehikel: das Distributionsnetz der Vorgänger (Standard, Seed 155), ein **Streckennetz** (Gitter) und drei feste Lehrnetze (Big-M-Falle, Rundungs-Falle, Bündelung).
 
-**Einordnung in die Reihe (die Kanten des Graphen):** Das Modell und die Bausteine (Netze, Formulierung, Cut-Set-Ungleichungen) stammen aus [fixkosten-netzdesign-demo](https://github.com/sebastian-hanisch/fixkosten-netzdesign-demo); dort ging es um die *Schranke*, hier um das *Verfahren*, das den Entwurf vom Fluss trennt – und um die Frage, was die Schnitte des Vorgängers im Master bewirken. Benders passt nicht zum Rucksack (dort gibt es keinen LP-Teil, den man abspalten könnte); das Netzdesign ist sein natürliches Zuhause, das die Exakte-Suche-Linie offen ließ. Das Folgestück, **Slope Scaling**, ist die Heuristik für die Netze, die Benders nicht mehr schafft. Bisher gebaut: die ersten elf Stücke.
+**Einordnung in die Reihe (die Kanten des Graphen):** Das Modell und die Bausteine (Netze, Formulierung, Cut-Set-Ungleichungen) stammen aus [fixkosten-netzdesign-demo](https://github.com/sebastian-hanisch/fixkosten-netzdesign-demo); dort ging es um die *Schranke*, hier um das *Verfahren*, das den Entwurf vom Fluss trennt – und um die Frage, was die Schnitte des Vorgängers im Master bewirken. Benders passt nicht zum Rucksack (dort gibt es keinen LP-Teil, den man abspalten könnte); das Netzdesign ist sein natürliches Zuhause, das die Exakte-Suche-Linie offen ließ. Das Folgestück, **Slope Scaling** (gebaut: [slope-scaling-demo](https://github.com/sebastian-hanisch/slope-scaling-demo)), ist die Heuristik für die Netze, die Benders nicht mehr schafft. Bisher gebaut: alle zwölf Stücke der Hauptlinie.
 ```
 edmonds-karp-demo (Wurzel: Restgraph, Rückkanten, Max-Flow = Min-Cut)                  [gebaut]
   ├─ dinic-demo (viele kürzeste Wege je Phase: Niveaugraph, blockierender Fluss)        [gebaut]
@@ -21,7 +21,7 @@ edmonds-karp-demo (Wurzel: Restgraph, Rückkanten, Max-Flow = Min-Cut)          
             ├─ garg-koenemann-demo (Näherung mit Preisen, ohne LP-Löser)                [gebaut]
             └─ fixkosten-netzdesign-demo (Fixkosten: Schranke und Schnitte)             [gebaut]
                  ├─ benders-demo (Entwurf im Master, Fluss im Teilproblem)              [dieses Stück]
-                 └─ Slope Scaling (Heuristik für große Netze)                           [geplant]
+                 └─ slope-scaling-demo (Fixkosten linearisieren, ohne Beweis)           [gebaut]
 ```
 
 ## Ergebnis (Zahlen aus den Tests)
