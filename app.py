@@ -341,7 +341,7 @@ st.markdown(
     """
 | Annahme | Was passiert, wenn sie verletzt ist - und wer setzt an |
 |---|---|
-| **Der Fluss ist der leichte Teil** | Benders lohnt, wenn das Teilproblem groß, aber das Entwurfsproblem klein ist (viele Szenarien, stochastische Programme). Hier ist es umgekehrt: 25 bis 70 Entwurfskanten, ein kleiner Fluss - das direkte MIP gewinnt. |
+| **Der Fluss ist der leichte Teil** | Benders lohnt, wenn das Teilproblem groß, aber das Entwurfsproblem klein ist (viele Szenarien, stochastische Programme). Hier ist es umgekehrt: je nach Regler rund 10 bis 70 Entwurfskanten (Standardnetz 27, bei den größten Einstellungen im Mittel etwa 70), ein kleiner Fluss - das direkte MIP gewinnt. |
 | **Der Master bleibt NP-schwer** | Jede Iteration löst ein ganzzahliges Programm; es wächst mit jedem Schnitt. Die Schnitte sind schwach (die LP-Schranke des Masters ist die schwache Relaxation). |
 | **Zulässigkeit nur über Schnitte** | Ohne Vorwissen (Cut-Set) lernt der Master Erreichbarkeit Iteration für Iteration; das sind die meisten Iterationen im reinen Verfahren. |
 | **Exakt bis zum Ende** | Bei Zeitgrenze bleibt eine Lücke; für große Netze braucht es Heuristiken. **Ansatzpunkt:** Slope Scaling (das Folgestück). |

@@ -1,6 +1,6 @@
 # Benders-Zerlegung – Entwurf im Master, Fluss im Teilproblem – Streamlit-Demo
 
-*(noch nicht deployed)*
+**[→ Demo live ausprobieren](https://sebastianhanisch-benders-demo.streamlit.app/)**
 
 Elftes Stück der **Netzwerkfluss-Linie** der "Konzepte"-Reihe für die Website "Sebastian Hanisch – Operations Research und Machine Learning", zweites im Netzwerkdesign-Ast:
 anders als die Fall-Demos im Portfolio (ein Anwendungsfall, mehrere Verfahren im Vergleich) zeigt diese Demo **ein** Verfahren – die **Benders-Zerlegung** für das Fixkosten-Netzdesign – an einem wachsenden Beispiel.
