@@ -348,7 +348,7 @@ st.markdown(
 | **Statisches Netz** | Fixkosten gelten je Kante und Tag; Fahrpläne brauchen ein Zeit-Raum-Netz (leercontainer-demo). |
 """
 )
-st.caption("Die Netzwerkfluss-Linie ist als Ganzes geplant: Edmonds-Karp, Dinic, Push-Relabel, Successive Shortest Paths, Cycle-Canceling, Cost Scaling, Mehrgüterfluss, Column Generation, Garg-Könemann, Fixkosten-Netzwerkdesign, Benders-Zerlegung (dieses Stück) und Slope Scaling (gebaut).")
+st.caption("Die Netzwerkfluss-Linie umfasst: Edmonds-Karp, Dinic, Push-Relabel, Successive Shortest Paths, Cycle-Canceling, Cost Scaling, Netzwerksimplex, Mehrgüterfluss, Column Generation, Garg-Könemann, Fixkosten-Netzwerkdesign, Benders-Zerlegung (dieses Stück) und Slope Scaling (gebaut).")
 
 st.markdown("---")
 
